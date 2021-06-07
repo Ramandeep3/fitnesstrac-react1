@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+.app {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 72px auto
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a:link, #logOut{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover, a:active, #logOut:hover, #logOut:active  {
+    text-decoration: underline;
+}
+
+#loggedInStatus {
+    display: flex;
+    justify-content: flex-end;
+    color: red;
+    padding-right: 8px;
+}
+
+#links a, #logOut{
+    padding: 8px;
+    align-items: center;
+    color: blue;
+    background-color: white;
+}
+
+#links {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#logOut {
+    padding: 8;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    border: none
+}
+
+#links button:focus {
+    outline: none;
+    outline: 0px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    padding-left: 36px;
+    font-size: 36px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color:crimson
+}
+
+body {
+    height: 100vh;
+}
+
+#app {
+    height: 100%;
+}
+
+#createActivity #createRoutine{
+    height: 200px;
+    width: 300px;
+    margin-bottom: 20px;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr
+}
+
+#activites {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.registerUser, input {
+    margin-left: 24px;
+}
+
+#logOut {
+    display: flex;
+    align-self: flex-end;
+}
+
+#Profile {
+    height: 100;
+}
+
+.userHub {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+}
+
+.loginPage, .signupPage {
+    height: 100%;
+    border: 2px solid red;
+    display: grid;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.loginForm {    
+    height: 200px;
+    width: 300px;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+}
+
+
+#myRoutines {
+height: 100%;
+border: 2px solid red;
+display: grid;
+padding-left: 24px;
+padding-right: 24px;
+}
+
+#home, #activites, #routines{
+    height: 100%;
+    border: 2px solid red;
+    display: grid;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#createRoutine{
+    height: 200px;
+    width: 300px;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#registerUser{
+    height: 200px;
+    width: 300px;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#registerUser label{
+    font-weight: bold;
+}
+
+
+
+.loginForm button, #registerUser button, #createActivity button, #myRoutines button{
+    background-color: darkgray;
+    border-radius: 5px;
+    background-color: crimson;
+    color: white;
+    font-size: larger;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+hr {
+    border-bottom: 2px solid black;
+}
